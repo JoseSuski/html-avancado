@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend>Cadastro de Clientes</legend>
+            <form action="recebe.html">
+                <div>
+                    <label for="txtNome">Nome</label>
+                    <input type="text" name="nome" id="txtNome" placeholder="Nome completo" required autofocus>
+                </div>
+                <div>
+                    <label for="txtIdade">Idade</label>
+                    <input type="text" name="idade" id="txtIdade" placeholder="somente números" required
+                        pattern="[0-9]{2}">
+                </div>
+                <div>
+                    <label for="txtEmail">E-mail</label>
+                    <input type="email" name="email" id="txtEmail" placeholder="usuario@provedor.com.br" required>
+                </div>
+                <div>
+                    <label for="txtTelefone">Telefone</label>
+                    <input type="text" name="telefone" id="txtTelefone" placeholder="(99) 9 9999-9999" required>
+                </div>
+                <div>
+                    <label for="txtCEP">CEP</label>
+                    <input type="text" name="cep" id="txtCEP" placeholder="99999-999" required
+                        pattern="[0-9]{5}-[0-9]{3}">
+                </div>
+                <div>
+                    <label for="txtCPF">CPF</label>
+                    <input type="text" name="cpf" id="txtCPF" placeholder="999.999.999-99" required
+                        pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+                </div>
+                <div>
+                    <label for="txtCNPJ">CNPJ</label>
+                    <input type="text" name="cnpj" id="txtCNPJ" placeholder="99.999.999/9999-99" required
+                        pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}/[0-9]{4}-[0-9]{2}">
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar">
+                    <input type="reset" value="Cancelar">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>

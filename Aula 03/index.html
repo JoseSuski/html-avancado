@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <base href="imagens/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <style>
+        img {
+            width: 500px;
+        }
+    </style>
+</head>
+<script>
+    function exibeDialog() {
+        document.getElementById('dialog').setAttribute('open', 'open')
+    }
+
+    function ocultaDialog() {
+        document.getElementById('dialog').removeAttribute('open')
+    }
+</script>
+
+<body>
+    <div>
+        <button onclick="exibeDialog()">Exibe</button>
+        <button onclick="ocultaDialog()">Oculta</button>
+        <dialog id="dialog">
+            <p>Conteúdo HTML Avançado - Caixa da Diálogo</p>
+            <p>Nessa aula serão abordadas algumas tags interativas com o usuário,
+                utilizando basicamente HTML puro
+            </p>
+        </dialog>
+    </div>
+    <div>
+        <details>
+            <summary>Conheça nossos cursos disponíveis</summary>
+            <details>
+                <summary>WEB</summary>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+                <p>PHP</p>
+            </details>
+            <details>
+                <summary>Banco de Dados</summary>
+                <p>Oracle</p>
+                <p>MySQL</p>
+            </details>
+        </details>
+    </div>
+    <div>
+        <select name="cursos" id="cursos">
+            <optgroup label="Web">
+                <option value="HMTL">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="PHP">PHP</option>
+            </optgroup>
+            <optgroup label="Banco de Dados">
+                <option value="Oracle">Oracle</option>
+                <option value="MySQL">MySQL</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="l_cursos">Selcione a Linguagem</label>
+        <input list="lcursos">
+        <datalist id="lcursos">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+        </datalist>
+    </div>
+    <div>
+        <label for="l_banco">Selecione o Banco de Dados</label>
+        <input list="l_banco">
+        <datalist id="l_banco">]
+            <option value="Oracle">Oracle</option>
+            <option value="MySQL">MySQL</option>
+        </datalist>
+    </div>
+    <div>
+        <script>
+            alert('Bem vindo ao curso de HTML avançado')
+        </script>
+        <noscript>
+            <p>Bem vindo ao curso de HTML avançado</p>
+        </noscript>
+    </div>
+    <div>
+        <figure>
+            <a href="../camisa.html">
+                <img src="camiseta-azul.png" alt="Camiseta Azul">
+            </a>
+        </figure>
+        <figure>
+            <a href="../logo.html">
+                <img src="proway.png" alt="Proway">
+            </a>
+        </figure>
+    </div>
+</body>
+
+</html>

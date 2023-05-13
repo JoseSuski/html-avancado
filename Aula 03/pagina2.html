@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Avançado</title>
+    <script>
+        function aumenta() {
+            document.getElementById('m1').value++
+            document.getElementById('medida').innerHTML =
+                parseInt(document.getElementById('m1').value * 10) + ' %'
+        }
+
+        function diminui() {
+            document.getElementById('m1').value--
+            document.getElementById('medida').innerHTML =
+                parseInt(document.getElementById('m1').value * 10) + ' %'
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="range" name="" id="" value="0" min="0" max="10"
+            oninput="document.getElementById('p1').value = this.value">
+    </div>
+    <div>
+        <progress id="p1" value="0" min="0" max="10"></progress>
+    </div>
+    <div>
+        <button onclick="aumenta()">+</button>
+        <button onclick="diminui()">-</button>
+        <meter id="m1" value="0" min="0" max="10" low="3" high="8" optimum="7"></meter>
+        <label id="medida">0 %</label>
+    </div>
+</body>
+
+</html>
