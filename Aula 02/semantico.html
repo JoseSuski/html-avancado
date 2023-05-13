@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+</head>
+<body>
+    <header>
+        <!-- Adcionando o cabeçalho da página -->
+        <!-- É esperado que encontrem-se aqui as tags h1 até h6 -->
+        <a id="topo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Primeira página</a></li>
+                <li><a href="#">Segunda página</a></li>
+                <li><a href="#">Terceira página</a></li>
+                <li>Para mais informações sobre HTML Semântico, procure a <aside><a href="https://www.proway.com.br">ProWay</a></aside>
+                </li>
+            </ul>
+        </nav>
+        <h1>Cabeçalho da página</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Primeiro artigo</h2>
+            <section>
+                <h2>Primeira seção do documento</h2>
+                <p>Conteúdo da primeira seção do primeiro artigo</p>
+            </section>
+            <section>
+                <a id="segunda_secao"></a>
+                <h2>Segunda seção do documento</h2>
+                <p>Conteúdo da segunda seção do primeiro artigo</p>
+            </section>
+        </article>
+        <article>
+            <h2>Segundo artigo</h2>
+            <section>
+                <h2>Primeira seção do segundo artigo</h2>
+                <p>Conteúdo da primeira seção do segundo artigo</p>
+                <p><em>Esse texto merece uma ênfase </em></p>
+            </section>
+        </article>
+        <article>
+            <h2> Imagens</h2><a id="fotos"></a>
+            <p> Utilizado para adicionar imagens na página</p>
+            <p>
+                <figure>
+                    <img src="images/camiseta-azul.png" width="300px" alt="Proway" srcset="">
+                    <figcaption> Logo da Proway </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/camiseta-branca.png" width="300px" alt="Camisa Feminina" srcset="">
+                    <figcaption> Camiseta Feminina Preta </figcaption>
+                </figure>
+            </p>
+        </article>
+    </main>
+    <section>
+        <article>
+            <h2> Áudios </h2>
+            <p> Você pode ver os áudios disponíveis nessa página </p>
+            <p>
+                <audio controls>
+                    <audio src="audios/primeiravez.mp3">
+                    <audio src="audios/zéramalho.mp3">
+                    </audio>
+            </p>
+        </article>
+        <article>
+            <h2> Vídeos </h2>
+            <p> Você pode ver os vídeos disponíveis nessa página </p>
+            <p>
+                <video controls>     
+                    <video src="videos/VID-20230505-WA0016.mp4"></video>
+                </video>
+            </p>
+        </article>
+        <article>
+            <h2> Vídeos do Youtube</h2>
+            <p> Vídeos incorporados do Youtube </p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XtNqtMauFfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+        </article>
+    </section>
+    <footer>
+        &reg; Todos os direitos reservados
+    </footer>
+</body>
+</html>
