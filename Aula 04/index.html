@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+
+<style>
+    div {
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <main>
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+            <form action="#" method="post">
+                <div>
+                    <label for="txtNome">Nome Completo</label>
+                    <input type="text" name="nome" id="txtNome" placeholder="Nome completo" required autofocus
+                        pattern="[\w.*]{1,10}\s[\w.*]{1,10}">
+                </div>
+                <div>
+                    <label for="txtIdade">Idade</label>
+                    <input type="text" name="idade" id="txtIdade" placeholder="somente números" required
+                        pattern="\d{2,3}">
+                </div>
+                <div>
+                    <label for="txtDataCadastro">Data de Cadastro</label>
+                    <input type="text" name="dataCadastro" id="txtDataCadastro" placeholder="Informe a data de cadastro"
+                        required pattern="((\d{2}-\d{2}-\d{2})|(\d{2}-\d{2}-\d{4})|(\d{2}/\d{2}/\d{2})|(\d/\d{2}/\d{4}}))">
+                </div>
+                <div>
+                    <label for="txtCPF">CPF</label>
+                    <input type="text" name="CPF" id="txtCPF" placeholder="Informe o CPF" required
+                        pattern="(\d{11})|(\d{3}.\d{3}.\d{3}-\d{2})">
+                </div>
+                <div>
+                    <label for="txtCNPJ">CNPJ</label>
+                    <input type="text" name="CNPJ" id="txtCNPJ" placeholder="Informe o CNPJ" required
+                        pattern="\d{2}.\d{3}.\d{3}/\d{4}-\d{2}">
+                </div>
+                <div>
+                    <label for="txtCEP">CEP</label>
+                    <input type="text" name="CEP" id="txtCEP" placeholder="Informe o CEP" required
+                        pattern="\d{5}-?\d{3}">
+                </div>
+                <div>
+                    <label for="txtTelefone">Telefone</label>
+                    <input type="text" name="telefone" id="txtTelefone" placeholder="(99) 9 9999-9999" required
+                        pattern="\(?\d{2}\)?\s?(\d{4,5})(-?)(\d{4})">
+                </div>
+                <div>
+                    <label for="txtEmail">Email</label>
+                    <input type="text" name="email" id="txtEmail" placeholder="dominio@gmail.com" required
+                        pattern="[^\s@]+@gmail\.com">
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar">
+                    <input type="reset" value="Cancelar">
+                </div>
+        </fieldset>
+    </main>
+</body>
+
+</html>
